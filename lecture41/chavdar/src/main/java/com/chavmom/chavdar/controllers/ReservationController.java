@@ -1,0 +1,35 @@
+package com.chavmom.chavdar.controllers;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("api")
+public class ReservationController {
+	
+	@GetMapping("hello")
+	public String hello() {
+		return "Hello, Spring!";
+	}
+	
+	@GetMapping("test")
+	public String someLogic(@RequestParam List<Integer> num) {
+		return String.format("Hello, %d, %d, %d", num.get(0), num.get(1), num.get(2));
+		
+	}
+	@GetMapping("sum")
+	public int sumInt(@RequestParam int[] numbers) {
+		int sum = 0;
+		for(int i = 0; i<numbers.length;i++) {
+			sum += numbers[i];
+		}
+		return sum;
+	}
+	
+	
+
+}
