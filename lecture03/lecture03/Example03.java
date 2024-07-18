@@ -1,3 +1,5 @@
+package lecture03;
+
 public class Example03 {
     public static void main(String[] args) {
         char symbole1 = 'R';

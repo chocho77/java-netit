@@ -1,3 +1,5 @@
+package lecture03;
+
 import demo.DemoClass;
 
 public class Example04{
