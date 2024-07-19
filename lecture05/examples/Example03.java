@@ -28,6 +28,7 @@ public class Example03 {
 
         int num = Integer.parseInt(sc.nextLine(), 2);
         System.out.println(num);
+        sc.close();
 
     }
 }
