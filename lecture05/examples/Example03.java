@@ -1,5 +1,7 @@
 package examples;
 
+import java.util.Scanner;
+
 public class Example03 {
     public static int getDecimal(int binary) {
         int decimal = 0;
@@ -19,5 +21,13 @@ public class Example03 {
     }
     public static void main(String[] args) {
         System.out.println(getDecimal(11011));
+        int no = 0b11011;
+        System.out.println(no);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please, enter binary number");
+
+        int num = Integer.parseInt(sc.nextLine(), 2);
+        System.out.println(num);
+
     }
 }
